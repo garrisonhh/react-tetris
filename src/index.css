@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#tetris-board {
+    display: flex;
+    flex-direction: column;
+
+    background: gray;
+
+    width: min-content;
+    border: 2px solid;
+    border-collapse: collapse;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tetris-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tetris-outer-cell {
+    width: 40px;
+    height: 40px;
+}
+
+.tetris-inner-cell {
+    /* bg color set dynamically */
+
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
